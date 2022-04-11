@@ -24,9 +24,8 @@ int main()
 	
 	int byteNumber_1, byteNumber_2;
 	char operation;
-	while ()
+	while (cin >> byteNumber_1 >> operation >> byteNumber_2)
 	{
-		cin >> byteNumber_1 >> operation >> byteNumber_2
 		if (operation == '&')
 		{
 			bytes.at(byteNumber_1 - 1) = bytes.at(byteNumber_1 - 1) &
