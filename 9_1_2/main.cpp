@@ -38,6 +38,8 @@ int main()
 		}
 	}
 
+	cout.width(2);
+	cout.fill('0');
 	cout << hex << uppercase << bytes.at(byteNumber_1 - 1).getData();
 	return 0;
 }
