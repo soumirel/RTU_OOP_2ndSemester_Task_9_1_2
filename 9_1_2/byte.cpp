@@ -30,6 +30,6 @@ Byte Byte::operator|(Byte byte)
 	int LM = this->mask & byte.mask;
 	int TDWLM = this->data & LM;
 	int BDWLM = byte.data & LM;
-	int OrDsWLM = TDWLM | BDWLM;
-	return Byte(((this->data) | OrDsWLM), this->mask);
+	int XorDsWLM = (TDWLM & BDWLM) ^ TDWLM;
+	return Byte(((this->data) ^ XorDsWLM), this->mask);
 }
